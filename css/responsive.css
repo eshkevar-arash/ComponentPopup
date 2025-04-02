@@ -1,0 +1,80 @@
+
+html{
+    font-size: 10px;
+    box-sizing: border-box;
+}
+*,*::before,*::after{
+    box-sizing: inherit;
+}
+a{
+    text-decoration: none;
+}
+body{
+    font-size: 1.6rem;
+    line-height: 1.6;
+}
+.container{
+    width: 100%;
+    padding: 0 1.5rem;
+    margin: 0 auto;
+    position: relative;
+
+}
+@media screen and (min-width: 576px) {
+    .container {
+        width: 54rem;
+    }
+}
+@media screen and (min-width: 768px) {
+    .container {
+        width: 72rem;
+    }
+}
+@media screen and (min-width: 992px) {
+    .container {
+        width: 96rem;
+    }
+
+}
+@media screen and (min-width: 1200px) {
+    .container {
+        width: 114rem;
+    }
+
+}
+@media screen and (min-width: 1400px) {
+    .container {
+        width: 137rem;
+    }
+}
+
+@media screen and (max-width: 576px) {
+    .box {
+        width: 90%; /* کم کردن عرض برای سازگاری با صفحه نمایش کوچک */
+        padding: 1.5rem;
+        height: auto; /* ارتفاع به طور خودکار تنظیم شود */
+        border-radius: 1rem; /* گوشه‌های گرد کمی کوچک‌تر */
+    }
+
+    .box__image {
+        width: 12rem; /* کاهش اندازه تصویر */
+        height: 12rem; /* کاهش ارتفاع تصویر */
+    }
+
+    .box__content p {
+        font-size: 1.4rem; /* کوچک کردن اندازه فونت */
+        text-align: center; /* متن در مرکز قرار گیرد */
+    }
+
+    .box__btn-close {
+        width: 3.5rem !important; /* کاهش اندازه دکمه بستن */
+        height: 3.5rem !important; /* کاهش ارتفاع دکمه */
+        top: -1rem; /* جابجایی موقعیت دکمه بستن */
+        right: -1rem; /* جابجایی موقعیت دکمه بستن */
+    }
+
+    .box__btn-close svg {
+        width: 2rem; /* اندازه آیکن دکمه بستن کوچک‌تر */
+        height: 2rem; /* اندازه آیکن دکمه بستن کوچک‌تر */
+    }
+}
